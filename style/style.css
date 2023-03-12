@@ -5,18 +5,24 @@
 
 }
 
+
 li {
   list-style: none;
 }
 /* Navbar style */
+
+#my-nav {
+  height: 80px;
+  
+}
 
 .navbar li {
     padding-left: 10px;
 }
 
 .navbar .navbar-brand img{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -151,7 +157,78 @@ li {
 
   }
 /* banner / hero style */
-/* banner / hero style */
+
+/* banner 2/ hero style 2 */
+div.hero {
+  /* background: url("../assets/landing-page-assets/hero-img.jpg") top center; */
+  background: url("../assets/landing-page-assets/hero-img-2.jpg") top center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  /* opacity: 0.4; */
+}
+
+div.hero .hero-col {
+  z-index: 10;
+  /* margin-top: 300px; */
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.hero:before {
+  content: "";
+  background: rgba(12, 23, 32, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+div.hero h1 {
+  font-size: 80px;
+  animation: fadeInAnimation ease 8s;
+}
+
+div.hero h2 {
+  font-size: 38px;
+  animation: fadeInAnimation ease 8s;
+}
+
+div.hero button {
+  border-color: #f1ab3d;
+  background-color: #f1ab3d;
+  margin-top: 30px;
+  width: 40%;
+  animation: fadeInAnimation ease 8s;
+}
+
+
+@media (max-width: 768px) {
+
+  div.hero h1 {
+    font-size: 40px;
+
+  }
+
+  div.hero .hero-col {
+    z-index: 10;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  div.hero button {
+    width: 50%;
+    margin-top: 10px;
+  }
+}
+
+/* banner 2/ hero style 2 */
 
 
 /* Intro style */
@@ -174,7 +251,17 @@ div.intro-section {
 .intro-section .intro-heading h1{
   margin-top: 40px;
   font-size: 50px;
+  display: flex;
+  flex-direction: row;
 }
+
+.intro-section .intro-heading h1:before, .intro-section .intro-heading h1:after {
+  content: "";
+  flex: 5 5;
+  border-bottom: 2px solid #f1ab3d;
+  margin: auto;
+}
+
 
 .intro-section .intro-para p {
     margin-top: 36px;
@@ -230,41 +317,46 @@ div.experience h3{
 /* Experience Style */
 
 
-/* Service Syle */
+/* Service Style */
 /* div.services {
 
 } */
 
 div.services  {
   padding: 20px 20px;
+  margin-bottom: 50px;
 }
 
 div.services .service-header {
   text-align: center;
   margin-top: 20px;
- 
 }
 
 div.services .service-header h1{
   font-size: 50px;
- 
+  display: flex;
+  flex-direction: row;
 }
+div.services .service-header h1:before, div.services .service-header h1:after {
+  content: "";
+  flex: 5 5;
+  border-bottom: 2px solid #f1ab3d;
+  margin: auto;
+}
+
 
 div.services  .service-row{
   margin-top: 40px;
 }
 
-/* div.services  .service-row .service-item-card{
-  width: 100%;
-} */
 
 div.services  .service-row .service-item-card h3,p,p{
   line-height: 28px;
 }
 
-div.services  .service-row .service-item-card img{
+/* div.services  .service-row .service-item-card img{
   opacity: 0.3;
-}
+} */
 
 div.services li {
   font-weight: bold;
@@ -283,7 +375,53 @@ div.services  .service-row .service-item-card h3,p,p{
 
 }
 
-/* Service Syle */
+/* Service Style */
+
+/* Service Style 3 */
+/* div.services  .service-row .service-item{
+  opacity: 0.3;
+} */
+
+div.services  .service-row .service-item {
+ padding-right: 60px;
+}
+
+div.services  .service-row .service-item .service-flex{
+  display: flex;
+ justify-content: space-around;
+  
+}
+
+div.services  .service-row .service-item .service-flex .service-img{
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+div.services  .service-row .service-item .service-flex .service-img img{
+  width: 80px;
+  height: 80px;
+}
+
+div.services  .service-row .service-item .service-flex .service-card h3{
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  div.services  .service-row .service-item {
+    padding-right: 30px;
+    margin-top: 30px;
+    line-height: 10px;
+   }
+
+   div.services  .service-row .service-item .service-flex .service-img img{
+    width: 70px;
+    height: 70px;
+  }
+
+}
+
+/* Service Style 3 */
+
 /* Quote Style */
 div.quote {
   background: url("../assets/landing-page-assets/image_header_2.jpeg") center top no-repeat fixed;
