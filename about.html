@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style/about-style.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/about-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -19,126 +19,282 @@
 <title>Hasmai</title>
 </head>
 
-
-<!-- NAVBAR -->
-<!-- <div class="m-4"> -->
-<nav class="navbar navbar-expand-lg  fixed-top" id="my-nav">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="./assets/landing-page-assets/hasmai_logo.png" alt="Bootstrap" width="30" height="24">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Projects
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Completed Projects</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
+<body style="overflow: auto; height:auto;">
+    <div id="wrapper">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg  fixed-top" id="my-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/landing-page-assets/hasmai_logo.png" alt="Bootstrap" width="30" height="24">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link " aria-current="page" href="./about.html">About</a>
                         </li>
-                        <li><a class="dropdown-item" href="#">Ongoin Projects</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        How we work
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Social Respnsibility</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
                         </li>
-                        <li><a class="dropdown-item" href="#">Health Safety Environment</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Careers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<!-- </div> -->
-<!-- NAVBAR -->
-
-
-
-<!-- ======= Footer ======= -->
-<!-- <footer id="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-7 col-md-6">
-                    <div class="footer-info">
-                        <h3>Hasmai Contracting</h3>
-                        <p>
-                            Opp. Masood Nursing College, Usman Bagh, Bikernakatte, Mangalore<br><br>
-                            <strong>Phone:</strong>+91 888888888<br>
-                            <strong>Email:</strong> <a href="mailto:info@thearchitecture.company"
-                                style="color: #fff">info@hasmai.company</a><br>
-                        </p>
-                        <div class="social-links mt-3">
-                            <a href="#" class="facebook"><i class="bx bxl-whatsapp"></i></a>
-                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-5 col-md-6 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><i class="bx bx-chevron-right"></i> General Contracting</li>
-                        <li><i class="bx bx-chevron-right"></i>Realestate Development</li>
-                        <li><i class="bx bx-chevron-right"></i>Interior Designing</li>
-                        <li><i class="bx bx-chevron-right"></i>Faculty Management</li>
-
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu" id="nav-dropdown">
+                                <li><a class="dropdown-item" href="#">Completed Projects</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Ongoin Projects</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                How we work
+                            </a>
+                            <ul class="dropdown-menu" id="nav-dropdown">
+                                <li><a class="dropdown-item" href="#">Social Respnsibility</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Health Safety Environment</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Careers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
             </div>
+        </nav>
+        <!-- NAVBAR -->
+        <div class="content">
+            <!-- Main Banner -->
+
+            <div class="container-fluid about-us">
+                <div class="row">
+                    <div class="col-12 about-col">
+                        <h1>ABOUT <span style="color: #f1ab3d">US</span></h1>
+                        <!-- <h2>We Provide Construction Solutions With Ability To Deliver Complex Projects Successfully</h2> -->
+                        <!-- <h2>"DELIVERING THE BEST "</h2> -->
+                        <hr />
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Main Banner -->
+
+
+            <!-- Brief Intro -->
+            <div class="container-fluid about-intro-section">
+                <div class="row text-center">
+                    <div class="col-12 about-intro-heading">
+                        <h1>About Hasmai Infra</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 about-intro-para">
+                        <p>HASMAI founded in 2007 by Mr. Abdul Waheed, is now one of Mangaluru’s emerging real-estate
+                            developers, engaged in the construction of residential layouts, commercial complexes,
+                            apartments, townships etc. We are passionate on real-estate industry, we aim to be
+                            progressive in our thinking and above all we are consummately professional in everything we
+                            do.</p>
+                        <p>
+                            In a period of 14 years the firm has made a name for itself as a real estate firm with
+                            integrity, transparency and a no compromise attitude towards quality, backed by an equally
+                            strong commitment to our clients both pre and post-sale. HASMAI go beyond business, it is
+                            our endeavour to provide high quality homes to our customers at reasonable prices. The
+                            pricing of all our projects is kept in such a way that the investor / buyer will make
+                            sufficient returns on his / her investment.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 about-intro-logo text-center">
+                        <img src="./assets/landing-page-assets/hero-img.jpg" alt="Bootstrap">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row vision-row">
+                <div class="col-lg-12 col-sm-12 vision-col">
+                    <blockquote class="blockquote">
+                     
+                        <h1>Our Vission</h1>
+                    </blockquote>
+                    <br />
+                    <blockquote class="otro-blockquote">
+                        To Be A Leader In The Construction Industry And To Maintain Our Reputation As A Company That
+                        Deeply Cares For Its Clients And Employees Alike.
+                        <span></span>
+                    </blockquote>
+                </div>
+            </div> -->
+            <!-- Brief Intro -->
+
+
+
+
+
+
+
+
+            <!-- Client Count -->
+            <div class="container-fluid client-count">
+                <div class="row client-count-row">
+                    <div class="col-lg-3 col-sm-12 client-count-col" style="color: white; text-align: center">
+                        <div class="client-count-item">
+                            <i class="fa fa-building rcicons" aria-hidden="true"></i>
+                            <div class="num">5</div>
+                            <h6>Projects Completed</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 client-count-col" style="color: white; text-align: center">
+                        <div class="client-count-item">
+                            <i class="fa fa-flag-checkered rcicons" aria-hidden="true"></i>
+                            <div class="num">13</div>
+                            <h6>Projects Completed</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 client-count-col" style="color: white; text-align: center">
+                        <div class="client-count-item">
+                            <i class="fa fa-university rcicons" aria-hidden="true"></i>
+                            <div class="num">4</div>
+                            <h6>Projects Completed</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 client-count-col">
+                        <div class="client-count-item client-count-item-last">
+                            <span class="fa fa-handshake-o rcicons" aria-hidden="true"></span>
+                            <div class="num">82</div>
+                            <h6>Projects Completed</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid social-table">
+                <div class="row text-center">
+                    <div class="col-lg-2 col-sm-2 social-table-item"><a href="https://www.facebook.com/hasmai.in"
+                            rel="noopener noreferrer"><i class="fa fa-facebook"></i></a></div>
+                    <div class="col-lg-2 col-sm-2 social-table-item"><a href="https://www.twitter.com/hasmai_in"
+                            rel="noopener noreferrer"><i class="fa fa-twitter"></i></a></div>
+                    <div class="col-lg-2 col-sm-2 social-table-item"><a href="https://www.instagram.com/hasmai.in"
+                            rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></div>
+                    <div class="col-lg-2 col-sm-2 social-table-item"><a
+                            href="https://www.linkedin.com/company/75042528/" rel="noopener noreferrer"><i
+                                class="fa fa-linkedin"></i></a></div>
+                    <div class="col-lg-2 col-sm-2 social-table-item"><a
+                            href="https://www.youtube.com/channel/UChZ2DA5QDIY4d72Ot250ARA" rel="noopener noreferrer"><i
+                                class="fa fa-youtube"></i></a></div>
+                </div>
+            </div>
+            <!-- Client Count -->
         </div>
+        <div class="height-emulator"></div>
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row footer-row">
+                        <div class="col-lg-3 col-sm-12 footer-col">
+
+                            <div class="footer-header">
+                                <span>Quick Links</span>
+                            </div>
+                            <div class="footer-box">
+                                <ul>
+                                    <li><a href="/about-us/">About</a></li>
+                                    <li><a href="/vision-mission/">Services</a></li>
+                                    <li><a href="/our-journey/">Projects</a></li>
+                                    <li><a href="/about-logo/">How we Work</a></li>
+                                    <li><a href="/news-events/">Careers</a></li>
+                                    <li><a href="/news-events/">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 footer-col">
+
+                            <div class="footer-header">
+                                <span>Projects</span>
+                            </div>
+                            <div class="footer-box">
+                                <ul>
+                                    <li><a href="/about-us/">Ongoing Projects</a></li>
+                                    <li><a href="/vision-mission/">Upcoming Projects</a></li>
+                                    <li><a href="/our-journey/">Completed Projects</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 footer-col">
+
+                            <div class="footer-header">
+                                <span>Address</span>
+                            </div>
+                            <div class="footer-box">
+                                <p>HASMAI Corporate Office,
+                                    Opp. Masood Nursing College,
+                                    Usman Bagh, Bikarnakatte,
+                                    Mangalore - 575005.
+                                    Karnataka, India</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 footer-col">
+
+                            <div class="footer-header">
+                                <span>Contact Details</span>
+                            </div>
+                            <div class="footer-box">
+                                <ul>
+                                    <p>Mail: info@hasmain.in</p>
+                                    <p>Cell: +91 8088 476 034</p>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid policy">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-9">
+                        <div class="policy-box">
+                            <p></p>
+                            <div class="textwidget">
+                                <p> ©2021, HASMAI. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
+        <!-- End Footer -->
     </div>
-    <div class="container">
-        <div class="copyright">
-            &copy; Copyright <strong><span>Hasmai</span></strong>. All Rights Reserved
-        </div>
-    </div>
-</footer> -->
-<!-- End Footer -->
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
 
-<!-- SCRIPTS -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/687ebb3abc.js" crossorigin="anonymous"></script>
+    <script src='./script/script.js'>
+    </script>
+    <!-- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
+    <!-- SCRIPTS -->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-    crossorigin="anonymous"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-
-<!-- <script src='./script/script.js'> -->
-</script>
-<!-- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
-<!-- SCRIPTS -->
 </body>
 
 </html>
