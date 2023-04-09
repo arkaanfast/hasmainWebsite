@@ -385,13 +385,11 @@ div.services  .service-row .service-item .service-flex .service-card h3{
 /* Quote Style */
 div.quote {
   background: url("../assets/landing-page-assets/image_header_2.jpeg") center top no-repeat fixed;
-  /* background: url("../assets/landing-page-assets/about-boxes-bg.jpg") center top no-repeat fixed; */
   background-size: cover;
   padding-top: 80px;
   padding-bottom: 90px;
   position: relative; 
   opacity: 0.9;
-
 }
 
 div.quote h1 {
